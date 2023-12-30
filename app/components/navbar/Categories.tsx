@@ -4,13 +4,15 @@ import { usePathname, useSearchParams } from 'next/navigation';
 
 import { BiSwim, BiTennisBall, BiPaint, BiBowlingBall } from 'react-icons/bi';
 
-import { GiShuttlecock, GiSoccerBall, GiArcheryTarget, GiBodyBalance, GiHighPunch } from 'react-icons/gi';
+import { GiShuttlecock, GiArcheryTarget, GiBodyBalance, GiHighPunch } from 'react-icons/gi';
 
 import { IoCodeSlash, IoBasketballOutline, IoColorPaletteOutline } from "react-icons/io5";
 
 import { BsCup } from "react-icons/bs";
 
 import { TbChefHat, TbGolf, TbMicrophone2 } from "react-icons/tb";
+
+import { MdOutlineSportsSoccer } from "react-icons/md";
 
 import CategoryBox from "../CategoryBox";
 import Container from '../Container';
@@ -23,13 +25,8 @@ export const categories = [
     description: 'Swimming classes!',
   },
   {
-    label: 'Badminton',
-    icon: GiShuttlecock,
-    description: 'Badminton classes!',
-  },
-  {
     label: 'Soccer',
-    icon: GiSoccerBall,
+    icon: MdOutlineSportsSoccer,
     description: 'Soccer classes!',
   },
   {
@@ -41,6 +38,11 @@ export const categories = [
     label: 'Basketball',
     icon: IoBasketballOutline,
     description: 'Basketball classes!',
+  },
+  {
+    label: 'Badminton',
+    icon: GiShuttlecock,
+    description: 'Badminton classes!',
   },
   {
     label: 'Bowling',
@@ -93,9 +95,9 @@ export const categories = [
     description: 'Coding classes!',
   },
   {
-    label: 'Public Speaking',
+    label: 'Singing',
     icon: TbMicrophone2,
-    description: 'Public speaking classes!',
+    description: 'Singing classes!',
   }
 ]
 

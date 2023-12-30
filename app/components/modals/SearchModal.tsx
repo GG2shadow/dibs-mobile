@@ -103,7 +103,7 @@ const SearchModal = () => {
 
   const actionLabel = useMemo(() => {
     if (step === STEPS.INFO) {
-      return 'Search'
+      return 'Show All Matching Classes'
     }
 
     return 'Next'
@@ -120,7 +120,7 @@ const SearchModal = () => {
   let bodyContent = (
     <div className="flex flex-col gap-8">
       <Heading
-        title="Where do you wanna go?"
+        title="Where do you wanna have your class?"
         subtitle="Find the perfect location!"
       />
       <CountrySelect 
@@ -153,15 +153,15 @@ const SearchModal = () => {
       <div className="flex flex-col gap-8">
         <Heading
           title="More information"
-          subtitle="Find your perfect place!"
+          subtitle="Find your perfect activity!"
         />
         <Counter 
           onChange={(value) => setGuestCount(value)}
           value={guestCount}
-          title="Guests" 
-          subtitle="How many guests are coming?"
+          title="Participants" 
+          subtitle="How many participants are coming?"
         />
-        <hr />
+        {/*<hr />
         <Counter 
           onChange={(value) => setRoomCount(value)}
           value={roomCount}
@@ -176,7 +176,7 @@ const SearchModal = () => {
           value={bathroomCount}
           title="Bathrooms"
           subtitle="How many bahtrooms do you need?"
-        />
+        /> */}
       </div>
     )
   }
